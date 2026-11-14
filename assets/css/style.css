@@ -479,3 +479,104 @@ input[type=range]::-moz-range-thumb{width:12px;height:12px;border-radius:50%;bac
   *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
   .reveal{opacity:1;transform:none}
 }
+
+/* =========================================================
+   MOBILE — компактные блоки (каждый блок ≈ в один экран)
+   ========================================================= */
+@media (max-width:760px){
+  .section{padding:52px 0}
+  .h2{font-size:31px;margin-top:8px}
+  .eyebrow{font-size:9.5px;letter-spacing:.26em}
+  .muted{font-size:13.5px;margin-top:10px}
+  .section-head{margin-bottom:18px;gap:14px}
+
+  /* about */
+  .about{padding-top:20px}
+  .about__grid{gap:22px}
+  .about__intro .eyebrow{padding-bottom:12px;max-width:none}
+  .about__intro .eyebrow br{display:none}
+  .about__title{font-size:40px;margin-top:12px}
+  .about__text{margin-top:8px;font-size:14px}
+  .about__intro .link-more{margin-top:14px}
+  .services{gap:8px}
+  .service{height:116px;border-radius:18px}
+  .service__front{padding:12px}
+  .service__front h3{font-size:12px;margin-top:10px}
+  .service__icon{width:32px;height:32px}
+  .service__back{padding:12px}
+  .service__back h3{font-size:19px}
+  .service__back p{font-size:11.5px;margin-top:4px;line-height:1.4}
+
+  /* complexes */
+  .complexes{padding-top:20px;padding-bottom:40px}
+  .complexes .section-head{flex-direction:column;align-items:flex-start;gap:12px}
+  .complexes .section-head .btn{padding:9px 14px;font-size:11.5px}
+  .carousel__track{padding-top:6px;padding-bottom:16px;gap:12px}
+  .complex{flex-basis:80%}
+  .complex:nth-child(n){transform:none}
+  .complex__img{aspect-ratio:16/9}
+  .complex__body{padding:14px 16px 16px}
+  .complex__body h3{font-size:22px;margin-top:6px}
+  .complex__body p{font-size:12.5px;margin-top:4px}
+  .complex__more{margin-top:10px}
+  .partners{margin-top:18px;padding:12px 0;gap:6px}
+  .marquee span{font-size:21px}
+  .marquee__inner{gap:40px}
+
+  /* why */
+  .why-wrap{padding:8px 0}
+  .why__img{min-height:150px}
+  .why__content{padding:4px 22px 0}
+  .why__title{font-size:23px;margin-top:10px}
+  .why__title br{display:none}
+  .why__list{padding:16px 22px 22px;gap:10px;font-size:12.5px;padding-right:90px}
+  .why__list svg{width:18px;height:18px}
+  .why__btn{right:22px;bottom:22px;width:48px;height:48px}
+
+  /* mortgage */
+  .mortgage__grid{gap:18px}
+  .mortgage .muted{display:none}
+  .calc-result__legend{display:none}
+  .mortgage .h2 br{display:none}
+  .calc{margin-top:16px;gap:14px}
+  .calc__label{font-size:12.5px;margin-bottom:6px}
+  .calc__label output{font-size:20px}
+  .calc-result{padding:24px 22px;border-radius:24px}
+  .calc-result__label{font-size:10.5px}
+  .calc-result__value{font-size:40px;margin-top:6px}
+  .calc-result__bar{margin-top:16px;height:6px}
+  .calc-result__list{margin:16px 0 18px;gap:8px}
+  .calc-result__list div{padding-bottom:8px;font-size:13px}
+
+  /* reviews */
+  .reviews{padding-top:20px}
+  .reviews .section-head{flex-direction:row;align-items:flex-end}
+  .reviews__ctrl .round-btn{width:44px;height:44px}
+  .reviews__track{padding-bottom:16px}
+  .review{min-height:0;padding:20px 20px 18px}
+  .review figcaption{margin-top:12px}
+  .review__big{font-size:23px!important}
+
+  /* contacts */
+  .contacts{padding-top:20px}
+  .contacts__grid{gap:20px}
+  .contacts .h2 br{display:none}
+  .contacts__list{margin-top:16px;gap:10px;grid-template-columns:1fr 1fr}
+  .contacts__list li{font-size:14px}
+  .contacts__list li:first-child{grid-column:1/-1}
+  .socials{margin-top:14px}
+  .socials a{padding:8px 16px;font-size:12px}
+  .form--inline{margin-top:18px;padding:18px;gap:10px}
+  .form__title{font-size:21px}
+  .form__row{gap:10px}
+  .field input,.field textarea{padding:19px 14px 6px;font-size:14px}
+  .field span{top:13px;font-size:13px}
+  .contacts__map{min-height:280px;border-radius:24px}
+
+  /* footer */
+  .footer{padding:36px 0 22px;margin-top:20px}
+  .footer__inner{gap:18px;padding-bottom:22px}
+  .footer__nav{gap:10px 18px;font-size:12.5px}
+  .footer__contacts{font-size:13px}
+  .footer__bottom{padding-top:14px;gap:6px;font-size:11px}
+}
